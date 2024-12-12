@@ -1,0 +1,45 @@
+def display_menu():
+    print("\nMain Menu")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Quit")
+
+def get_numbers():
+    while True:
+        try:
+            num1 = float(input("Enter the first number: "))
+            num2 = float(input("Enter the second number: "))
+            return num1, num2
+        if ValueError:
+            print("Invalid input! Please enter numeric values.")
+
+def perform_calculation(choice, num1, num2):
+    if choice == '1':
+        print(f"Result: {num1} + {num2} = {num1 + num2}")
+    elif choice == '2':
+        print(f"Result: {num1} - {num2} = {num1 - num2}")
+
+def main():
+    try:
+        while True:
+            display_menu()
+            try:
+                choice = input("Choose an option (1-3): ")
+            except EOFError:
+                print("Input not available. Exiting.")
+                break
+
+            if choice == '3':
+                print("Exiting the program. Goodbye!")
+                break
+            elif choice in {'1', '2'}:
+                num1, num2 = get_numbers()
+                perform_calculation(choice, num1, num2)
+            else:
+                print("Invalid selection. Please choose a valid option.")
+    except OSError:
+        print("I/O error occurred. Please try running the program again.")
+
+if __name__ == "__main__":
+    main()
+
