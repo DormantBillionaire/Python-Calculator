@@ -10,7 +10,7 @@
 	 
   2. For novice, but aspiring programmers, guidance on the code:
 			b. For Example.)
-	 				1. The "Debugging Errors & Functions" sheet, provides a walkthrough on the following: 
+	 				1. The **"L-B-L Expl."** sheet,in the files, provides a walkthrough on the following: **(Short for Line by Line Explanation)**
 							a. Identifying and Describing the functions and how they operate 
 			 				b. Identifying and Describing Errors, and what they mean and how they affect the code
 							c. Loops, including what the functions look like, and their importance 
